@@ -482,7 +482,7 @@ svg text{font-family:var(--f-body)}
 .ag-cap-live i{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 22%,transparent);animation:agLive 1.6s ease-in-out infinite}
 @keyframes agLive{50%{opacity:.25;transform:scale(.7)}}
 .ag-orb{position:relative;width:48px;height:48px;display:grid;place-items:center;margin-top:4px}
-.ag-orb img{width:38px;height:38px;border-radius:12px;position:relative;z-index:1}
+.ag-orb img{width:100%;height:100%;border-radius:50%;object-fit:cover;transform:scale(1.02);position:relative;z-index:1;box-shadow:0 6px 18px -6px color-mix(in srgb,var(--accent) 60%,transparent)}
 .ag-ring{position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(from 0deg,var(--accent),var(--accent2),#ff8fc3,var(--accent));animation:agSpin 4s linear infinite;-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2.5px),#000 0);mask:radial-gradient(farthest-side,transparent calc(100% - 2.5px),#000 0)}
 @keyframes agSpin{to{transform:rotate(360deg)}}
 .ag-rot-txt em{font-style:normal;font-size:.72rem;line-height:1.2;color:var(--muted);text-wrap:balance;max-width:15ch}
