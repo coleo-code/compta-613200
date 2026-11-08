@@ -643,6 +643,8 @@ footer .frow{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
 .bank-c small{color:var(--muted);font-size:.78rem;opacity:.85}
 .bank-c.hi{box-shadow:var(--shadow),inset 0 0 0 2px color-mix(in srgb,var(--accent) 50%,transparent);background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 12%,var(--card)),var(--card))}
 @media (max-width:900px){.bank-grid{grid-template-columns:1fr}}
+.orbit-col{display:grid;justify-items:center;gap:26px}
+.motto-orb{text-align:center;margin:0;max-width:30ch;text-wrap:balance}
 </style>
 
 <div class="ghost" aria-hidden="true"><i class="g1"></i><i class="g2"></i></div>
@@ -802,14 +804,16 @@ footer .frow{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
         <div class="you-pt"><span class="tile" style="background:var(--soft)">🤝</span><div><b>Je boekhouder blijft in zijn tool</b><span>Hij werkt in Octopus en krijgt een dossier dat af is. Zijn tijd gaat naar advies.</span></div></div>
         <div class="you-pt"><span class="tile" style="background:var(--mint)">🔑</span><div><b>Jij beheert de verbindingen</b><span>Jouw bank, jouw Peppol, jouw sleutels. Wissel je van boekhouder, je dossier gaat mee.</span></div></div>
       </div>
-      <p class="motto">Jij onderneemt. <span class="grad">De AI vereenvoudigt.</span> Je boekhouder adviseert.</p>
     </div>
+    <div class="orbit-col">
     <div class="orbit" aria-label="De ondernemer in het midden, met rondom Compta, AI, bank, Peppol, Octopus en de boekhouder">
       <i class="ring r2"></i><i class="ring r1"></i>
       <div class="spin">
         <i class="sat" style="transform:translate(0,-230%)"></i>
       </div>
       <div class="me"><div><b>Jij</b><span>de ondernemer</span></div></div>
+    </div>
+      <p class="motto motto-orb">Jij onderneemt. <span class="grad">De AI vereenvoudigt.</span> Je boekhouder adviseert.</p>
     </div>
   </div>
 </section>
