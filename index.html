@@ -1071,13 +1071,14 @@ footer .frow{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
     ['mastercard','Mastercard','Kaart'],['codabox','CodaBox','CODA'],['enablebanking','Enable Banking','PSD2'],['peppol','Peppol','e-facturatie'],
     ['gmail','Gmail','Documenten'],['octopus','Octopus','Boekhouding'],['partena','Partena','Sociaal secretariaat'],['myminfin','MyMinfin','Intervat'],['nbb','Nationale Bank','Jaarrekening']
   ];
+  /* enkel logo's die echt in logos/ staan (met toestemming); de rest wordt een naamkaartje, zonder 404's */
+  const LOGOS = new Set([]);
   const hues = ['#2f62e9','#e04f86','#14915a','#d07206','#7a5af5','#0e9bb8'];
   const track = document.getElementById('track');
   const make = ([id, name, sub], i) => {
     const d = document.createElement('span'); d.className = 'lgo';
-    const img = new Image(); img.alt = name; img.src = 'logos/' + id + '.svg';
-    const fallback = () => { const m = document.createElement('span'); m.className = 'mk'; m.style.background = hues[i % hues.length]; m.textContent = name[0]; img.replaceWith(m); const t = document.createElement('span'); t.innerHTML = name + '<small>' + sub + '</small>'; m.after(t); };
-    img.onerror = fallback; d.appendChild(img);
+    const card = () => { const m = document.createElement('span'); m.className = 'mk'; m.style.background = hues[i % hues.length]; m.textContent = name[0]; const t = document.createElement('span'); t.innerHTML = name + '<small>' + sub + '</small>'; d.append(m, t); };
+    if (LOGOS.has(id)) { const img = new Image(); img.alt = name; img.src = 'logos/' + id + '.svg'; img.onerror = () => { img.remove(); card(); }; d.appendChild(img); } else card();
     return d;
   };
   [...L, ...L].forEach((l, i) => track.appendChild(make(l, i % L.length)));
