@@ -629,11 +629,19 @@ footer .frow{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
 .fd-drop{padding:12px 16px;border-radius:16px;border:1.5px dashed color-mix(in srgb,var(--accent) 45%,transparent);color:var(--muted);font-size:.86rem;text-align:center}
 .fd-drop em{display:block;font-style:normal;color:var(--accent);font-weight:700;font-size:.8rem;margin-top:2px}
 @media (max-width:900px){.fact{grid-template-columns:1fr;gap:28px}.fd-inv{margin-left:0}}
+.bank-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bank-c{padding:22px;border-radius:22px;background:var(--card);box-shadow:var(--shadow);display:grid;gap:8px;align-content:start}
+.bank-c .tile{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:var(--soft);font-size:21px}
+.bank-c b{font:700 1.08rem/1.25 var(--f-display);color:var(--ink)}
+.bank-c p{margin:0;color:var(--muted);line-height:1.5;font-size:.94rem}
+.bank-c small{color:var(--muted);font-size:.78rem;opacity:.85}
+.bank-c.hi{box-shadow:var(--shadow),inset 0 0 0 2px color-mix(in srgb,var(--accent) 50%,transparent);background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 12%,var(--card)),var(--card))}
+@media (max-width:900px){.bank-grid{grid-template-columns:1fr}}
 </style>
 
 <div class="ghost" aria-hidden="true"><i class="g1"></i><i class="g2"></i></div>
 <div class="mnav" id="mnav" hidden>
-  <p>Product</p><a href="#flow">🔀 Hoe het werkt</a><a href="#demo">▶️ Demo</a><a href="#facturatie">🧾 Facturatie</a><a href="#app-web">📱 App &amp; web</a>
+  <p>Product</p><a href="#flow">🔀 Hoe het werkt</a><a href="#demo">▶️ Demo</a><a href="#facturatie">🧾 Facturatie</a><a href="#betalingen">🏦 Betalingen</a><a href="#app-web">📱 App &amp; web</a>
   <p>Voor wie</p><a href="#rollen">🤝 Wie doet wat</a><a href="#jij">🧑‍💼 Voor de ondernemer</a><a href="#boekhouder">🧮 Voor je boekhouder</a>
   <p>Meer</p><a href="#waarom">💡 Waarom</a><a href="#visie">🚀 Visie</a><a href="#contact">✉️ Contact</a>
 </div>
@@ -646,6 +654,7 @@ footer .frow{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
           <a href="#flow"><span>🔀</span><b>Hoe het werkt</b><small>bronnen, Compta en Octopus</small></a>
           <a href="#demo"><span>▶️</span><b>Demo</b><small>kasticket, Peppol, buitenland</small></a>
           <a href="#facturatie"><span>🧾</span><b>Facturatie</b><small>gratis inbegrepen, met AI</small></a>
+          <a href="#betalingen"><span>🏦</span><b>Betalingen</b><small>jouw bank, jouw keuze</small></a>
           <a href="#app-web"><span>📱</span><b>App &amp; web</b><small>scannen onderweg, overzicht thuis</small></a>
         </div></div>
       <div class="ndd"><button type="button" class="ndd-b" aria-haspopup="true">Voor wie <i>▾</i></button>
@@ -903,6 +912,17 @@ footer .frow{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
         <div class="fd-steps"><span class="on">Verstuurd via Peppol</span><span>Herinnering op dag 30</span><span>Betaling gekoppeld</span></div>
       </div>
       <div class="fd-drop">📄 offerte.docx · 📊 prijzen.xlsx <em>sleep hier → omgezet</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="betalingen">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">🏦 Betalingen</span><h2>Jouw bank, <span class="grad">jouw keuze.</span></h2><p class="lead">Bij ons hoef je geen nieuwe rekening te openen bij Swan, Revolut of een andere fintech. Het mag, maar het hoeft zeker niet. Compta werkt met de bank die jij kiest, via CODA en PSD2.</p></div>
+    <div class="bank-grid">
+      <div class="bank-c"><span class="tile">🏛️</span><b>Een volwaardige bank</b><p>Handig als je meer wil dan betalen: beleggingen, investeringen, leningen en verzekeringen onder één dak.</p><small>Argenta, KBC, Belfius, ING, BNP Paribas Fortis…</small></div>
+      <div class="bank-c"><span class="tile">⚡</span><b>Een bank voor betalingen</b><p>Soms is een rekening die zuiver met betalingen bezig is, gewoon goed genoeg: snel, digitaal en eenvoudig.</p><small>Revolut, Swan en andere betaalrekeningen</small></div>
+      <div class="bank-c hi"><span class="tile">🔗</span><b>Of allebei</b><p>Compta haalt alles samen, hoeveel rekeningen en kaarten je ook hebt. Jij kiest, wij koppelen.</p><small>CODA · PSD2 · kaartstaten</small></div>
     </div>
   </div>
 </section>
