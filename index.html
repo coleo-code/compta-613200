@@ -476,7 +476,7 @@ svg text{font-family:var(--f-body)}
 .ag-chips i{font-style:normal;font-size:.68rem;font-weight:600;padding:2px 7px;border-radius:99px;background:var(--soft)}
 .ag-mid{grid-template-rows:auto auto 1fr}
 .ag-cap{display:grid;justify-items:center;align-content:center;text-align:center;gap:2px;margin-top:10px;line-height:1.25;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px 6px;min-height:52px}
-.ag-cap b{display:inline-flex;align-items:center;gap:5px;font:700 .8rem/1.2 var(--f-display);color:var(--ink)}
+.ag-cap b{display:inline-flex;white-space:nowrap;align-items:center;gap:5px;font:700 .8rem/1.2 var(--f-display);color:var(--ink)}
 .ag-cap span{font-size:.72rem;color:var(--muted);white-space:nowrap}
 .ag-cap-live b{color:var(--ok)}
 .ag-cap-live i{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 22%,transparent);animation:agLive 1.6s ease-in-out infinite}
@@ -498,7 +498,7 @@ svg text{font-family:var(--f-body)}
 .ag-quote{justify-self:end;width:auto;max-width:36ch;margin:-6px 0 0;text-wrap:balance;font-size:.82rem;font-style:italic;color:var(--muted);text-align:right}
 .ag-quote b{font-style:normal;color:var(--ink)}
 @media (max-width:960px){.agent,.ag-quote{justify-self:stretch;width:100%;max-width:none;text-align:left}}
-@media (max-width:560px){.agent{grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr)}.ag-card{height:142px;padding:10px 6px}.ag-card small{font-size:8px;letter-spacing:.08em}.ag-card strong{font-size:.78rem}.ag-chips i{font-size:.6rem;padding:2px 5px}.ag-rot-txt em{font-size:.64rem}.ag-cap b{font-size:.72rem}.ag-cap span{font-size:.62rem}}
+@media (max-width:560px){.agent{grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr)}.ag-card{height:142px;padding:10px 6px}.ag-card small{font-size:8px;letter-spacing:.08em}.ag-card strong{font-size:.78rem}.ag-chips i{font-size:.6rem;padding:2px 5px}.ag-rot-txt em{font-size:.64rem}.ag-cap{padding:8px 3px}.ag-cap b{font-size:clamp(.55rem,2.6vw,.72rem);gap:4px}.ag-cap-live i{width:6px;height:6px}.ag-cap span{font-size:clamp(.54rem,2.7vw,.62rem)}}
 
 /* rollen */
 .roles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
@@ -713,9 +713,9 @@ footer .frow{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
           <strong>Boeking klaar</strong>
           <div class="rot ag-rot-txt" data-ms="2600"><div class="rot-i on"><em>kosten geboekt</em></div><div class="rot-i"><em>bewijs gekoppeld</em></div><div class="rot-i"><em>inkomsten opgevolgd</em></div><div class="rot-i"><em>btw en sociaal klaar</em></div></div>
         </div>
-        <div class="ag-cap" style="grid-column:1"><b>Ondernemer</b><span>95% automatisch</span></div>
-        <div class="ag-cap ag-cap-live" style="grid-column:3"><b><i></i>Agent</b><span>24/7 actief</span></div>
-        <div class="ag-cap" style="grid-column:5"><b>Boekhouder</b><span>op afroep</span></div>
+        <div class="ag-cap" style="grid-column:1"><b>100% in controle</b><span>95% automatisch</span></div>
+        <div class="ag-cap ag-cap-live" style="grid-column:3"><b><i></i>24/7 altijd actief</b><span>Jij bent zijn klant</span></div>
+        <div class="ag-cap" style="grid-column:5"><b>Controle periodiek</b><span>Advies op afroep</span></div>
       </div>
       <p class="ag-quote">Je boekhouder kan maar boeken wat je hem brengt. Stel je voor dat je hem <b>alles</b> brengt, al getoetst aan de realiteit.</p>
     <div class="stage" aria-label="Voorbeeld van de Compta-app en het webplatform met fictieve gegevens">
