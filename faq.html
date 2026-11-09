@@ -703,6 +703,7 @@ footer .frow{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
 .cmp-b .but{color:var(--muted)}
 .smart-hl{border-color:color-mix(in srgb,var(--accent) 45%,transparent);background:color-mix(in srgb,var(--accent) 8%,var(--card))}
 @media (max-width:900px){.smart-grid{grid-template-columns:1fr 1fr}}@media (max-width:560px){.smart-grid{grid-template-columns:1fr}}
+.faq-list details>.faq-ul{margin:-6px 0 14px;padding-left:20px;color:var(--muted);display:grid;gap:6px}.faq-list details>.faq-ul b{color:var(--ink)}
 
 </style>
 </head>
@@ -815,7 +816,7 @@ footer .frow{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
     <h2>Praktisch</h2>
     <div class="faq-list">
       <details><summary>Kan ik Compta vandaag al gebruiken?</summary><p>De app en het web zijn 100% operationeel en draaien dagelijks op een echt dossier. Een officiële beta is het nog niet: vandaag is Compta vooral voor persoonlijk gebruik. <a href="./#contact">Laat je interesse weten</a> en je hoort als eerste wanneer je kan instappen.</p></details>
-      <details><summary>Wat kost Compta?</summary><p>De prijzen liggen nog niet vast. Facturatie zit in elk geval inbegrepen, zodat je geen apart facturatieprogramma meer nodig hebt.</p></details>
+      <details><summary>Wat kost Compta?</summary><p>De hamvraag, en we zijn er graag eerlijk over. Compta gebruikt AI voor heel veel processen, en AI-credits kosten geld. Hoe meer je Compta laat doen, hoe meer credits dat vraagt.</p><p>We werken daarom aan twee modellen:</p><ul class="faq-ul"><li><b>Alles bij ons:</b> wij leveren de AI-credits, aan een mooie korting.</li><li><b>Je eigen AI:</b> je koppelt je eigen AI-account en betaalt die credits rechtstreeks aan je eigen aanbieder. Bij ons betaal je dan enkel voor het onderhoud en de tussenlaag.</li></ul><p>Beide modellen werken we nog uit. Eén ding is zeker: Compta is een hobbyproject dat uit de hand is gelopen, geen winstmachine. Reken op een grootorde van ongeveer € 600 per jaar. Dat kan lager uitvallen, maar vraag je Compta heel uitdagende dingen, dan lopen de credits nu eenmaal op. Je ziet altijd waar je voor betaalt.</p></details>
       <details><summary>Werkt het met mijn bank?</summary><p>Ja. Compta werkt met de Belgische banken via CODA en PSD2, onder meer Argenta, KBC, Belfius, ING, BNP Paribas Fortis, Crelan en Revolut. Je hoeft geen nieuwe rekening te openen.</p></details>
       <details><summary>Mijn boekhouder werkt niet met Octopus. Kan het toch?</summary><p>Vandaag is Compta gebouwd rond Octopus, omdat dat in twee richtingen via de API kan. Andere pakketten staan op de planning. Laat gerust weten met welk pakket je boekhouder werkt.</p></details>
       <details><summary>Wat met Peppol? Veel tools prijzen dat aan.</summary><p>Sinds 1 januari 2026 zijn elektronische facturen via Peppol verplicht tussen Belgische ondernemingen. Peppol is dus een verplichting, geen slimme functie: het is een digitale postbode. Veel tools surfen daarop mee. Bij Compta zit het gewoon inbegrepen, en het echte werk begint pas daarna: elke Peppol-factuur wordt automatisch aan de betaling gekoppeld, de btw-code wordt voorgesteld en de boeking staat klaar in Octopus. Voor kastickets en buitenlandse kosten, waar Peppol niets doet, zorgt Compta voor hetzelfde gemak.</p></details>
