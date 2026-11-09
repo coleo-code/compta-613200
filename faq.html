@@ -872,6 +872,7 @@ paint();if(b)b.addEventListener('click',function(){var n=cur()==='dark'?'light':
 (()=>{const b=document.getElementById('burger'),m=document.getElementById('mnav');if(!b||!m)return;
 const set=o=>{b.setAttribute('aria-expanded',o);m.hidden=!o};b.addEventListener('click',()=>set(m.hidden));
 m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>set(false)));})();
+document.querySelectorAll('.faq-list details').forEach(d=>d.addEventListener('toggle',()=>{if(!d.open)return;d.parentElement.querySelectorAll(':scope>details[open]').forEach(o=>{if(o!==d)o.open=false})}));
 (()=>{if(location.hash){const t=document.querySelector(location.hash);const d=t&&t.closest('details');if(d)d.open=true}})();
 </script>
 </body>
